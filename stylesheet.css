@@ -1,1 +1,19 @@
-Hello, world
+img {
+	display: block;
+	height: 100px;
+	width: 300px;
+	margin: auto;
+}
+p {
+	text-align: center;
+	font-family: Garamond, serif;
+	font-size: 20px;
+	color:#1d4e89
+}
+span {
+	font-family: cursive;
+	font-weight: bold;
+}
+h3 {
+	text-decoration: underline;
+}
