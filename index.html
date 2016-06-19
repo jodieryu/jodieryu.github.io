@@ -3,8 +3,31 @@
 	<head>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
         <title>Jodie's World!</title>
+
+        <script type="text/javascript">
+         <!--
+            function getValue(){
+               var retVal = prompt("How are you today? Enter either: good / bad / ok ");
+               if( retVal == "good" ){
+               	  alert("Yay! I hope you continue your wonderful day (:");
+               }
+               else if ( retVal == "bad" ){
+                  alert("Aww, I'm sorry :( I hope your day gets better!");
+                }
+                else if ( retVal == "ok" ){
+                	alert("You have the power to make it a good day!");
+                }
+                else {
+                	alert("good / bad / ok?");
+                }
+            }
+         //-->
+      	</script>
     </head>
             <body>
+            	<script>window.alert("Hello there!!!");
+            	</script>
+
             	<img src="http://i.imgur.com/O1QP7H0.gif?1"/>
             	<p>My name is <span>Jodie Ryu</span>! Nice to meet you!</p>
 				<ul>
@@ -24,5 +47,9 @@
 						</ul>
 					</li>	
 				</ul>
+      
+      			<form>
+         		<input type="button" value="Click me!" onclick="getValue();" />
+      			</form>
 			</body>
 </html>
