@@ -1,6 +1,10 @@
+head {
+	background-color:#7dd0b6;
+}
+
 img {
 	display: block;
-	height: 100px;
+	height: 300px;
 	width: 300px;
 	margin: auto;
 }
@@ -8,7 +12,7 @@ p {
 	text-align: center;
 	font-family: Garamond, serif;
 	font-size: 20px;
-	color:#1d4e89
+	color:#1d4e89;
 }
 span {
 	font-family: cursive;
@@ -16,4 +20,5 @@ span {
 }
 h3 {
 	text-decoration: underline;
+	color: #FF7456;
 }
