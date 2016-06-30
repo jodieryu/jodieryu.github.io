@@ -106,7 +106,6 @@ body {
 .portfolio-container {
     width: 100vw;
     height: 120vh;
-    border: 2px solid black;
 }
 .row-portfolio-name {
     float: right;
@@ -220,5 +219,8 @@ body {
         width:50%;
     }
 }
+
+/*-----Return to Top Arrow------*/
+
 
 
