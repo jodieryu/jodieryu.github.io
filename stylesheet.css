@@ -1,6 +1,6 @@
 body {
     background: #fbfbfb;
-    border: 2px solid yellow;
+    
 }
 /*-----NAVBAR-----*/
 .primary-nav {
@@ -72,7 +72,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    border: 3px solid green;
+    border: 3px solid transparent;
 }
 .row-aboutme {
     float: right;
@@ -99,7 +99,126 @@ body {
     color: white;
     border-left: 3px solid white;
     text-align: left;
-    margin: 400px 850px 400px 80px;
+    margin: 400px 700px 400px 80px;
     padding: 5px;
 }
+/*-------PORTFOLIO-------*/
+.portfolio-container {
+    width: 100vw;
+    height: 120vh;
+    border: 2px solid black;
+}
+.row-portfolio-name {
+    float: right;
+    font-family:'Raleway';
+    font-size: 65px;
+    color: black;
+    margin-right: 80px;
+    margin-top: 65px;
+}
+
+#rig {
+    max-width: 770px;
+    margin: 0 auto; /*center aligned*/
+    padding: 5px;
+    font-size: 0; /* Remember to change it back to normal font size if have captions */
+    list-style: none;
+    margin-top: 150px;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width: 25%;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    transform: scale(0.8);
+    transition: all 2s;
+}
+
+#rig li:hover .rig-img {
+    transform: scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: black url(img/link.png) no-repeat center 20%;
+    background-size: 50px 50px;
+    opacity: 0;
+    filter: alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity: 0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display: block;
+    padding: 0 30px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Raleway';
+    font-weight: normal!important;
+    top: 40%;
+    color: white;
+    opacity:0;
+    filter: alpha(opacity=0);/*For older IE*/
+    transform: translateY(-20px);
+    transition: all .3s;
+}
+#rig li:hover .rig-text {
+    transform: translateY(0px);
+    opacity: 0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:25%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+}
+
 
