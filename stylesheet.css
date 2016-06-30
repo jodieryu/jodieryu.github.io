@@ -185,11 +185,11 @@ body {
     left: 0;
     width: 100%;
     text-align: center;
-    text-transform: capitalize;
     font-size: 18px;
     font-weight: bold;
-    font-family: 'Raleway';
-    font-weight: normal!important;
+    font-family: 'Raleway' sans-serif;
+    font-weight: 100!important;
+    text-transform: uppercase;
     top: 40%;
     color: white;
     opacity:0;
