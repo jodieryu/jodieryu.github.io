@@ -52,13 +52,13 @@ body {
     height: 20vh;
 }
 .row-name {
-    font-family:'Raleway';
-    font-size:55px;
+    font-family: 'Raleway';
+    font-size: 65px;
     
 }
 .row-description {
-    font-family:'Raleway' sans-serif;
-    font-size: 20px;
+    font-family: 'Raleway' sans-serif;
+    font-size: 25px;
     letter-spacing: 10px;
     font-weight: 100;
 }
@@ -77,9 +77,29 @@ body {
 .row-aboutme {
     float: right;
     font-family:'Raleway';
-    font-size:65px;
-    color:white;
-    border: 3px solid white;
-    margin-right:70px;
-    margin-top: 70px;
+    font-size: 65px;
+    color: white;
+    margin-right: 80px;
+    margin-top: 65px;
 }
+.row-aboutmedescrip {
+    float: left;
+    font-family: 'Raleway' sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 80px;
+    margin-top: 360px;
+}
+.row-aboutmedetail {
+    font-family: 'Raleway' sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    border-left: 3px solid white;
+    text-align: left;
+    margin: 400px 850px 400px 80px;
+    padding: 5px;
+}
+
