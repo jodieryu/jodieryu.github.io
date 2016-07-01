@@ -1,6 +1,5 @@
 body {
-    background: #fbfbfb;
-    
+    background: #fbfbfb; 
 }
 /*-----NAVBAR-----*/
 .primary-nav {
@@ -105,7 +104,7 @@ body {
 /*-------PORTFOLIO-------*/
 .portfolio-container {
     width: 100vw;
-    height: 120vh;
+    height: 110vh;
 }
 .row-portfolio-name {
     float: right;
@@ -140,7 +139,7 @@ body {
     box-shadow:0 0 6px rgba(0,0,0,0.3);*/
     display: block;
     position: relative;
-    overflow: hidden;
+    overflow: none;
 }
         
 /* If have the image layer */
@@ -219,6 +218,43 @@ body {
         width:50%;
     }
 }
+/*-----Education & Skills-----*/
+.media-container {
+	width: 100vw;
+    height: 100vh;
+    background: url(images/watercolor-powder-blue.jpg) no-repeat center center;
+}
+.media {
+	position: block;
+	margin: 0 auto;
+	width: 60%;
+	border: 2px solid black;
+
+}
+.media-object {
+	height:60%;
+}
+.educationskills {
+	float: right;
+    font-family:'Raleway';
+    font-size: 65px;
+    color: #465c74;
+    margin-right: 80px;
+    margin-top: 65px;
+}
+.media-heading {
+	font-family:'Raleway';
+    color: #465c74;
+    font-size: 20px;
+}
+.media-body {
+    font-family: 'Raleway' sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #465c74;
+    
+}
+
 
 /*-----Return to Top Arrow------*/
 
