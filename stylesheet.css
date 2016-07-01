@@ -1,5 +1,4 @@
 body {
-    background: #fbfbfb; 
 }
 /*-----NAVBAR-----*/
 .primary-nav {
@@ -30,9 +29,7 @@ body {
 }
 .primary-nav a:hover {
     color: #FFE23D;
-    -moz-transition-duration: 0.4s;
-    -webkit-transition-duration: 0.4s;
-    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 /*-----HOMEPAGE EDITING-----*/
 .homepage {
@@ -53,7 +50,6 @@ body {
 .row-name {
     font-family: 'Raleway';
     font-size: 65px;
-    
 }
 .row-description {
     font-family: 'Raleway' sans-serif;
@@ -142,15 +138,14 @@ body {
 /*-------PORTFOLIO-------*/
 .portfolio-container {
     width: 100vw;
-    height: 110vh;
+
 }
 .row-portfolio-name {
-    float: right;
     font-family:'Raleway';
     font-size: 65px;
     color: black;
-    margin-right: 80px;
-    margin-top: 65px;
+    margin-left: 80px;
+    margin-top: 60px;
 }
 
 #rig {
@@ -159,11 +154,10 @@ body {
     padding: 5px;
     font-size: 0; /* Remember to change it back to normal font size if have captions */
     list-style: none;
-    margin-top: 150px;
+    
 }
 #rig li {
     display: inline-block;
-    *display:inline;/*for IE6 - IE7*/
     width: 25%;
     vertical-align: middle;
     box-sizing: border-box;
@@ -173,8 +167,6 @@ body {
         
 /* The wrapper for each item */
 .rig-cell {
-    /*margin:12px;
-    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
     display: block;
     position: relative;
     overflow: none;
@@ -203,7 +195,7 @@ body {
     bottom: 0;
     right: 0;
     margin: auto;
-    background: black url(img/link.png) no-repeat center 20%;
+    background: black no-repeat center 20%;
     background-size: 50px 50px;
     opacity: 0;
     filter: alpha(opacity=0);/*For IE6 - IE8*/
@@ -259,15 +251,15 @@ body {
 /*-----Education & Skills-----*/
 .media-container {
 	width: 100vw;
-    height: 100vh;
+
     background: url(images/watercolor-powder-blue.jpg) no-repeat center center;
     background-size: cover;
 }
 .media {
 	position: block;
 	margin: 0 auto;
-	width: 50%;
-	border:1px solid black;
+	width: 40%;
+	
     float:bottom;
 }
 .media-object {
@@ -277,7 +269,7 @@ body {
     font-family:'Raleway';
     font-size: 65px;
     color: #465c74;
-    margin: 0 auto;
+    margin: 0px auto;
     width: 90%;
     padding-top: 55px;
 }
@@ -285,18 +277,33 @@ body {
 	font-family:'Raleway';
     color: #465c74;
     font-size: 20px;
+    margin-left:20%;
 }
 .media-body {
     font-family: 'Raleway' sans-serif;
     font-size: 20px;
     font-weight: 100;
-    color: #465c74;
-    
+    color: #465c74;   
 }
-/*-----CONTACT ME PAGE-----*/
 
+@media (max-width: 854px) {
+    .media-body {
+        font-size: 18px;
+    }
+}
+@media (max-width: 664px) {
+    .media-body {
+        font-size: 16px;
+    }
+}
 
-/*----SOCIAL MEDIA BUTTONS-----*/
+/*----CONTACT & SOCIAL MEDIA BUTTONS-----*/
+.contact {
+    font-family: 'Raleway';
+    font-size: 65px;
+    text-align: center;
+}
+
 ul.social-buttons {
   text-align: center;
   margin-top: 50px;
@@ -308,8 +315,8 @@ ul.social-buttons li {
 }
 
 ul.social-buttons li a {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   display: block;
   border-radius: 50px;
   text-decoration: none;
@@ -321,26 +328,24 @@ ul.social-buttons li a {
 ul.social-buttons li a.soundcloud {
   background-image: url(images/soundcloud.png);
 }
-
 ul.social-buttons li a.instagram {
   background-image: url('images/instagram.png');
 }
-
 ul.social-buttons li a.linkedin {
   background-image: url('images/linkedin.png');
 }
-
-/*Demo 1*/
-ul#demo1 li a {
+ul.social-buttons li a.github {
+    background-image: url('images/github.png');
+}
+/* Animated */
+ul.social-buttons li a {
   transition: transform 0.2s linear;
 }
-
-ul#demo1 li:hover a {
+ul.social-buttons li:hover a {
   transform: translateY(-10px);
 }
 
 /*-----Return to Top Arrow------*/
-
 #back-to-top {
     position: fixed;
     bottom: 40px;

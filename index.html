@@ -13,20 +13,21 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Making it mobile responsive -->
+    <meta name="viewport" content="width=device-width, user-scalable=false;">
   </head>
 
 <!--START OF JODIE'S PAGE YAYYYAYAYYYAYYAYAY-->
   <body>
-    <div id="top" style="position:absolute; top:0; left:0;"></div>
+    <div class="top" style="position:absolute; top:0; left:0;"></div>
     <header>
       <div class="egmenu">
         <ul class="primary-nav">
           <li><a href="http://jodieryu.github.io/">Home</a></li>
-          <li><a class="page-scroll" a href="#about">About</a></li>
-
-          <li><a href="http://jodieryu.github.io/contactform-index.html">Contact</a></li>
-
-          <li><a class="page-scroll" a href=#portfolio>Portfolio</a></li>
+          <li><a class="page-scroll" a href=".about">About</a></li>
+          <li><a class="page-scroll" a href=.portfolio>Portfolio</a></li>
+          <li><a class="page-scroll" href=".contact">Contact</a></li>
         </ul>
       </div>
     </header>
@@ -37,12 +38,12 @@
           jodie ryu
         </div>
         <div class="row-description">
-        designer & coder
+        designer &amp; coder
         </div>
       </div>
     </div>
 <!--ABOUT ME PAGE ABOUT ME PAGE ABOUT ME PAGE-->
-    <div id="about">
+    <div class="about">
       <div class="aboutmebackground">
         <div class="row-aboutme">
           about me
@@ -56,7 +57,7 @@
       </div>
     </div>
 <!--PORTFOLIO PAGE PORTFOLIO PAGE PORTFOLIO PAGE-->
-    <div id="portfolio">
+    <div class="portfolio">
       <div class="portfolio-container">
         <div class="row-portfolio-name">
         portfolio
@@ -114,56 +115,58 @@
     <div class="educationskills">
           education &amp; skills
     </div>
+    
+    <div class="box">
+      <div class="media">
+        <div class="media-left media-middle">
+          <a href="#">
+            <img class="media-object" src="images/uva.png" alt="uva-icon">
+          </a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Education</h4>
+          University of Virginia | Class of 2018
+          <br>Major: Computer Science, Psychology
+        </div>
+      </div>
 
-    <div class="media">
-      <div class="media-left media-middle">
-        <a href="#">
-          <img class="media-object" src="images/uva.png" alt="uva-icon">
-        </a>
-      </div>
-      <div class="media-body">
-        <h4 class="media-heading">Education</h4>
-        University of Virginia | Class of 2018
-        <br>Major: Computer Science, Psychology
-      </div>
-    </div>
-
-    <div class="media">
-      <div class="media-left media-middle">
-        <a href="#">
-          <img class="media-object" src="images/logos.png" alt="logos" style="width:110px;height:120px;"/>
-        </a>
-      </div>
-      <div class="media-body">
-        <h4 class="media-heading">Skills</h4>
-          <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>HTML &amp; CSS</li>
-            <li>Javascript</li>
-            <li>Photoshop</li>
-          </ul>
-      </div>
-    </div>
-
-    <div class="media">
-      <div class="media-left media-middle">
-        <a href="#">
-          <img class="media-object" src="images/i_X2.png" alt="iXperiencelogo" style="width:90px;height:90px;margin:8px">
-        </a>
-      </div>
-      <div class="media-body">
-        <h4 class="media-heading">iXperience</h4>
+      <div class="media">
+        <div class="media-left media-middle">
+          <a href="#">
+            <img class="media-object" src="images/i_X2.png" alt="iXperiencelogo" style="width:90px;height:90px;margin:8px">
+          </a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">iXperience</h4>
           Cape Town | Summer 2016
           <br>4-week Intensive coding &amp; learning
           <br>4-week Internship with ...
-      </div> 
+        </div> 
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="media">
+        <div class="media-left media-middle">
+          <a href="#">
+            <img class="media-object" src="images/logos.png" alt="logos" style="width:110px;height:120px;"/>
+          </a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Skills</h4>
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>HTML &amp; CSS</li>
+              <li>Javascript</li>
+              <li>Photoshop</li>
+            </ul>
+        </div>
+      </div>
     </div>
 
     </div>
   </div>
-<!--CONTACT ME PAGE CONTACT ME PAGE-->
-
 
 <!--MY LIFE PICS-->
 <div class="my-life-container">  
@@ -191,13 +194,18 @@
   </div>
 </div>
 
-<!--SOCIAL MEDIA -->
+<!--CONTACT & SOCIAL MEDIA -->
 <div class="footer-body">
   <div class="footer-container">
     
-    <ul class="social-buttons" id="demo1">
+    <div class="contact">contact &amp; follow me!
+    </div>
+    <ul class="social-buttons">
       <li>
-          <a href="https://www.linkedin.com/in/jodie-ryu-15b960103" class="linkedin"></a>
+        <a href="https://www.linkedin.com/in/jodie-ryu-15b960103" class="linkedin"></a>
+      </li>
+      <li>
+        <a href="https://github.com/jodieryu" class="github"></a>
       </li>
       <li>
         <a href="https://www.instagram.com/ryuukki/" class="instagram"></a>
