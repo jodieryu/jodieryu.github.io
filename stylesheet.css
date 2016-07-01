@@ -323,7 +323,7 @@ ul.social-buttons li a.soundcloud {
 }
 
 ul.social-buttons li a.instagram {
-  background-image: url('images/instagram.png')
+  background-image: url('images/instagram.png');
 }
 
 ul.social-buttons li a.linkedin {
