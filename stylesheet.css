@@ -282,18 +282,29 @@ body {
     color: #465c74;   
 }
 /*-----INTERNSHIP & LEADERSHIP-----*/
-.container {
+.il-container {
     width: 100vw;
-    border: 2px solid black;
+    margin-top: 70px;
+    border: 1px solid black;
+}
+.internshipsleadership {
+    font-family:'Raleway';
+    font-size: 65px;
+    color: #465c74;
+    margin: 0px auto;
+    padding-top: 55px;
+    margin: 0px auto;
+    width: 90%;
 }
 .img-box {
-    width: 600px;
+    width: 700px;
     height: 300px;
     position:relative;
     background-size: cover;
     background-position: center center;
     float: left;
 }
+
 .img-box::before {
     content:"";
     display: block;
