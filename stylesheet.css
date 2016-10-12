@@ -95,8 +95,8 @@ body {
     margin-top: 250px;
     margin-left: 75px;
     padding-left: 5px;
-    /*padding-right: 60%;*/
-    border: 2px solid white;
+    padding-right: 60%;
+    border-left: 2px solid white;
 }
 @media(max-width: 550px) {
     .row-aboutmedescrip {
@@ -292,7 +292,7 @@ body {
 }
 .img-box {
     width: 700px;
-    height: 300px;
+    height: 320px;
     position:relative;
     background-size: cover;
     background-position: center center;
@@ -323,7 +323,7 @@ body {
     transition: all .3s;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -70%);
 }
 .img-box:hover .hover-overlay {
