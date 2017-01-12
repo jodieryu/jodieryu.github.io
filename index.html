@@ -14,6 +14,37 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+    <!-- Portfolio Script -->
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+    
+        var filterList = {
+    
+          init: function () {
+      
+            // MixItUp plugin
+            // http://mixitup.io
+            $('#portfoliolist').mixItUp({
+              selectors: {
+              target: '.portfolio',
+              filter: '.filter' 
+              },
+              load: {
+              filter: '.app'  
+              }     
+            });               
+      
+          }
+
+        };
+    
+        // Run the show!
+        filterList.init();  
+      });   
+  
+    </script>
+
     <!-- Making it mobile responsive -->
     <meta name="viewport" content="width=device-width, user-scalable=false;">
   </head>
@@ -26,6 +57,7 @@
         <ul class="primary-nav">
           <li><a href="http://jodieryu.github.io/">Home</a></li>
           <li><a class="page-scroll" a href=".about">About</a></li>
+          <li><a class="page-scroll" a href=".academics">Academics</a></li>
           <li><a class="page-scroll" a href=.portfolio>Portfolio</a></li>
           <li><a class="page-scroll" href=".contact">Contact</a></li>
         </ul>
@@ -42,7 +74,7 @@
         </div>
       </div>
     </div>
-<!--ABOUT ME PAGE ABOUT ME PAGE ABOUT ME PAGE-->
+<!--ABOUT ME PAGE -->
     <div class="about">
       <div class="row-aboutme">
         about me
@@ -57,125 +89,132 @@
       </div>
     </div>
 
-<!--PORTFOLIO PAGE PORTFOLIO PAGE PORTFOLIO PAGE-->
-<!--     <div class="portfolio">
-      <div class="portfolio-container">
-        <div class="row-portfolio-name">
-        portfolio
-        </div>
-        <div class="row-portfoliosamples">
-          <ul id="rig">
-            <li>
-              <a href="#" class="rig-cell">
-                <img class="rig-img" src="images/Jan_Feb_GenMeeting.jpg">
-                <span class="rig-overlay"></span>
-                <span class="rig-text">VSA Winter General Meeting </span>
-              </a>
-            </li>
-            <li>
-              <a class="rig-cell" href="#">
-                <img class="rig-img" src="images/PHOFESTFALL.jpg">
-                <span class="rig-overlay"></span>
-                <span class="rig-text">Fall Phofest</span>
-              </a>
-            </li>
-            <li>
-              <a class="rig-cell" href="#">
-                <img class="rig-img" src="images/First_GenMeeting.jpg">
-                <span class="rig-overlay"></span>
-                <span class="rig-text">VSA First General Meeting</span>
-              </a>
-            </li>
-            <li>
-              <a class="rig-cell" href="#">
-                <img class="rig-img" src="images/5Kcolorrunflyer.jpg">
-                <span class="rig-overlay"></span>
-                <span class="rig-text">Color Run Flyer</span>
-              </a>
-            </li>
-            <li>
-              <a class="rig-cell" href="#">
-                <img class="rig-img" src="images/rubyramsss.jpg">
-                <span class="rig-overlay"></span>
-                <span class="rig-text">Ruby Rams Logo</span>
-              </a>
-            </li>
-            <li>
-              <a class="rig-cell" href="#">
-                <img class="rig-img" src="images/Oct_GenMeeting.jpg">
-                <span class="rig-overlay"></span>
-                <span class="rig-text">VSA October General Meeting</span>
-              </a>
-            </li>
+<!-- Academics -->
+    <div class="academics">
+      <div class="row-academics">
+        academics
+      </div>
+      <div class="courses">
+        <h2>Courses</h2>
+          <ul>
+            <li>Programming and Data Representation</li>
+            <li>Software Development Methods</li>
+            <li>Discrete Mathematics</li>
+            <li>Programming Languages for Web Applications (currently)</li>
+            <li>Algorithms (currently)</li>
           </ul>
-        </div>
       </div>
-    </div> -->
-<!--Education & Skills-->
- <!--  <div class="media-container"> 
-    <div class="educationskills">
-          education &amp; skills
-    </div>
-    
-    <div class="box">
-      <div class="media">
-        <div class="media-left media-middle">
-          <a href="#">
-            <img class="media-object" src="images/uva.png" alt="uva-icon">
-          </a>
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading">Education</h4>
-            <div class="media-description"> University of Virginia | Class of 2018 
-            </div>
-            <div class="media-description"> Major: Computer Science, Psychology
-            </div>
-        </div>
+      <div class="skills">
+        <h2>Skills</h2>
+          <ul>
+            <li>Java</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>HTML &amp; CSS</li>
+            <li>Javascript</li>
+            <li>AngularJS</li>
+            <li>Github</li>
+          </ul>
       </div>
-
-      <div class="media">
-        <div class="media-left media-middle">
-          <a href="#">
-            <img class="media-object" src="images/i_X2.png" alt="iXperiencelogo" style="width:90px;height:90px;margin:8px">
-          </a>
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading">iXperience</h4>
-          Cape Town | Summer 2016
-            <div class="media-description">
-            Four week Intensive coding &amp; learning
-            </div>
-            <div class="media-description">
-            Four week Internship with Pendulum Advisors
-            </div>
-        </div> 
+      <div class="leadership">
+        <h2>Leadership</h2>
+          <ul>
+            <li>Treasurer (2016-2017), Public Relations Chair (2015-2016): The Vietnamese Student Association</li>
+            <li>Event Coordinator (2014-2015): First Year Leadership Experience</li>
+          </ul>
       </div>
     </div>
 
-    <div class="box">
-      <div class="media">
-        <div class="media-left media-middle">
-          <a href="#">
-            <img class="media-object" src="images/logos.png" alt="logos" style="width:110px;height:120px;"/>
-          </a>
+<!--PORTFOLIO PAGE PORTFOLIO PAGE PORTFOLIO PAGE-->
+    <div class="portfolio">
+      <ul id="filters" class="clearfix">
+      <li><span class="filter active" data-filter=".flyer, .logo, .photography">All</span></li>
+      <li><span class="filter" data-filter=".flyer">Flyers</span></li>
+      <li><span class="filter" data-filter=".logo">Logo</span></li>
+      <li><span class="filter" data-filter=".photography">Photography</span></li>
+      </ul>
+
+      <div id="portfoliolist">
+        <div class="portfolio flyer" data-cat="flyer" style="display: inline-block;" data-bound> 
+          <div class="portfolio-wrapper">
+            <img src="images/Jan_Feb_GenMeeting.jpg" alt="">
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">VSA Winter General Meeting Flyer</a> 
+                <span class="text-category">flyer</span>
+              </div>
+              <div class="label-bg"> </div>
+            </div>
+          </div>
         </div>
-        <div class="media-body">
-          <h4 class="media-heading">Skills</h4>
-            <ul>
-              <li>Python</li>
-              <li>Java</li>
-              <li>C++</li>
-              <li>HTML &amp; CSS</li>
-              <li>Javascript</li>
-              <li>AngularJS</li>
-              <li>Photoshop</li>
-            </ul>
+
+        <div class="portfolio flyer" data-cat="flyer" style="display: inline-block;" data-bound> 
+          <div class="portfolio-wrapper">
+            <img src="images/PHOFESTFALL.jpg" alt="">
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">Fall Phofest Flyer</a> 
+                <span class="text-category">flyer</span>
+              </div>
+              <div class="label-bg"> </div>
+            </div>
+          </div>
         </div>
+
+        <div class="portfolio flyer" data-cat="flyer" style="display: inline-block;" data-bound> 
+          <div class="portfolio-wrapper">
+            <img src="images/First_GenMeeting.jpg" alt="">
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">VSA First General Meeting Flyer</a> 
+                <span class="text-category">flyer</span>
+              </div>
+              <div class="label-bg"> </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="portfolio flyer" data-cat="flyer" style="display: inline-block;" data-bound> 
+          <div class="portfolio-wrapper">
+            <img src="images/5Kcolorrunflyer.jpg" alt="">
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">Color Run Flyer</a> 
+                <span class="text-category">flyer</span>
+              </div>
+              <div class="label-bg"> </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio logo" data-cat="logo" style="display: inline-block;" data-bound> 
+          <div class="portfolio-wrapper">
+            <img src="images/rubyramsss.jpg" alt="">
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">Ruby Rams Logo</a> 
+                <span class="text-category">logo</span>
+              </div>
+              <div class="label-bg"> </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio flyer" data-cat="flyer" style="display: inline-block;" data-bound> 
+          <div class="portfolio-wrapper">
+            <img src="images/Oct_GenMeeting.jpg" alt="">
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">VSA October General Meeting Flyer</a> 
+                <span class="text-category">flyer</span>
+              </div>
+              <div class="label-bg"> </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-
-    </div>
-  </div> -->
 
 <!--INTERNSHIPS & LEADERSHIP-->
   <!-- <div class="il-container">

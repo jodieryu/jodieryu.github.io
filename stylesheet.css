@@ -17,6 +17,7 @@ body {
     margin: auto;
     opacity: 0.8;
     z-index: 820;
+    position: fixed;
 }
 .primary-nav li {
     display: inline-block;
@@ -38,6 +39,7 @@ body {
     background: #000;
     width: 100vw;
     height: 100vh;
+    padding-top: 10px;
 }
 .homepage-container {
     text-align: center;
@@ -107,152 +109,181 @@ body {
    }
 }
 
-/*-------PORTFOLIO-------*/
-.portfolio-container {
+/*-----Academics-----*/
+.academics {
     width: 100vw;
+    height: 100vh;
 }
-.row-portfolio-name {
+.row-academics {
     font-family:'Raleway';
     font-size: 65px;
     color: black;
-    margin-left: 80px;
-    margin-top: 60px;
-}
-
-#rig {
-    max-width: 770px;
-    margin: 0 auto; /*center aligned*/
-    padding: 5px;
-    font-size: 0; /* Remember to change it back to normal font size if have captions */
-    list-style: none;
-    
-}
-#rig li {
-    display: inline-block;
-    width: 25%;
-    vertical-align: middle;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-        
-/* The wrapper for each item */
-.rig-cell {
-    display: block;
-    position: relative;
-    overflow: none;
-}
-        
-/* If have the image layer */
-.rig-img {
-    display: block;
     width: 100%;
-    height: auto;
-    border: none;
-    transform: scale(0.8);
-    transition: all 2s;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    text-align: left;
 }
-
-#rig li:hover .rig-img {
-    transform: scale(1.05);
+.courses {
+    background-color: #b4cee5
 }
-        
-/* If have the overlay layer */
-.rig-overlay {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    background: black no-repeat center 20%;
-    background-size: 50px 50px;
-    opacity: 0;
-    filter: alpha(opacity=0);/*For IE6 - IE8*/
-    transition:all 0.6s;
-}
-#rig li:hover .rig-overlay {
-    opacity: 0.7;
-}
-
-/* If have captions */
-.rig-text {
-    display: block;
-    padding: 0 30px;
-    box-sizing: border-box;
-    position: absolute;
-    left: 0;
-    width: 100%;
+.courses, .skills, .leadership {
+    padding: 20px 0;
+    margin: 0 1.5%;
+    float: left;
+    width: 30%;
     text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Raleway' sans-serif;
-    font-weight: 100!important;
-    text-transform: uppercase;
-    top: 40%;
-    color: white;
-    opacity:0;
-    filter: alpha(opacity=0);/*For older IE*/
-    transform: translateY(-20px);
-    transition: all .3s;
+    border-radius: 5px;
 }
-#rig li:hover .rig-text {
-    transform: translateY(0px);
-    opacity: 0.9;
+.courses ul, .skills ul, .leadership ul{
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
 }
-
-@media (max-width: 9000px) {
-    #rig li {
-        width:25%;
-    }
+.courses li, .skills li, .leadership li{
+    padding: 3px;
+}
+.skills {
+    background-color: #546986;
+}
+.leadership {
+    background-color: #b4cee5;
 }
 
-@media (max-width: 700px) {
-    #rig li {
-        width:33.33%;
-    }
+/*-------PORTFOLIO-------*/
+.portfolio {
+   
 }
 
-@media (max-width: 550px) {
-    #rig li {
-        width:50%;
-    }
+html {
+  overflow-y: scroll;
 }
-/*-----Education & Skills-----*/
-.media-container {
-	width: 100vw;
-    background: url(images/watercolor-powder-blue.jpg) no-repeat center center;
-    background-size: cover;
+
+.container { 
+    position: relative; 
+    width: 960px; 
+    margin: 0 auto; 
+    -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;  
 }
-.media {
-	position: block;
-	margin: 0 auto;
-	width: 40%;
+ 
+#filters {
+    margin:1%;
+    padding:0;
+    list-style:none;
 }
-.media-object {
-	height:105px;
+#filters li {
+    float:left;
 }
-.educationskills {
-    font-family:'Raleway';
-    font-size: 65px;
-    color: #465c74;
-    margin: 0px auto;
-    width: 90%;
-    padding-top: 55px;
-}
-.media-heading {
-	font-family:'Raleway';
-    color: #465c74;
-    font-size: 20px;
-    margin-left:20%;
-}
-.media-body {
-    font-family: 'Raleway' sans-serif;
-    font-size: 20px;
+    
+#filters li span {
+    display: block;
+    padding:5px 20px;       
+    text-decoration:none;
+    color:#666;
+    cursor: pointer;
+    font-family:'Raleway', sans-serif;
     font-weight: 100;
-    color: #465c74;   
+    text-transform: uppercase;
 }
+    
+#filters li span.active {
+    background: #546986;
+    color:#fff;
+}
+ 
+#portfoliolist .portfolio {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    width: 20%;
+    margin: 2%;
+    display:none;
+    float:left;
+    overflow:hidden;
+}
+
+.portfolio-wrapper {
+    overflow:hidden;
+    position: relative !important;
+    background: #666;
+    cursor:pointer;
+}
+
+.portfolio img {
+    max-width:100%;
+    position: relative;
+    top:0;
+    -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);     
+}
+    
+.portfolio .label {
+    position: absolute;
+    width: 100%;
+    height:40px;
+    bottom:-40px;
+    -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    font-family:'Raleway', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.portfolio .label-bg {
+    background: #b4cee5;
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+    
+.portfolio .label-text {
+    color:#fff;
+    position: relative;
+    z-index:500;
+    padding:5px 8px;
+}
+    
+.portfolio .text-category {
+    display:block;
+    font-size:9px;
+}
+
+.portfolio:hover .label {
+bottom:0;
+}
+.portfolio:hover img {
+top:-30px;
+}  
+
+/* #Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container {
+        width: 768px; 
+    }
+}
+/* #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+    .container { 
+        width: 95%; 
+    }
+    
+    #portfoliolist .portfolio {
+        width:48%;
+        margin:1%;
+    }       
+}
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 70%;
+    }
+}
+
 /*-----INTERNSHIP & LEADERSHIP-----*/
 .il-container {
     width: 100vw;
