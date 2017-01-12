@@ -59,7 +59,7 @@ body {
 }
 /*-------ABOUT ME-------*/
 .about {
-    background: url(images/me.jpg) no-repeat center center;
+    background: url(images/me2.jpg) no-repeat center center;
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -69,40 +69,42 @@ body {
     font-size: 65px;
     color: white;
     width: 100%;
-    padding-top: 60px;
+    padding-top: 40px;
     padding-right: 80px;
     text-align: right;
 }
-.row-aboutmedescrip {
+.row-description-container {
+    margin: 15% 0px 0px 3%;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.6);
+    text-align: center;
+    width: 40%;
     float: left;
+}
+.row-aboutdescription {
+    border: 1px solid white;
     font-family: 'Raleway' sans-serif;
     font-size: 25px;
     font-weight: 100;
-    text-transform: uppercase;
-    color: white;
-    width: 100%;
-    margin-top: 215px;
-    padding-left: 75px;
+    letter-spacing: 3px;
+    color: black;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
-.row-aboutmedetail {
-    font-family: 'Raleway' sans-serif;
-    font-size: 20px;
-    font-weight: 100;
-    color: white;
-    width: 100%;
-    margin-top: 250px;
-    margin-left: 75px;
-    padding-left: 5px;
-    padding-right: 60%;
-    border-left: 2px solid white;
+.row-aboutquote {
+    font-family: 'Raleway';
+    padding: 2%;
+    font-size: 16px;
 }
-@media(max-width: 550px) {
-    .row-aboutmedescrip {
+
+@media (max-width: 500px) {
+   .row-description-container {
+        margin: 40% auto;
+        width: 100%;
+   }
+   .row-aboutdescription {
         font-size: 20px;
-}
-    .row-aboutmedetail {
-        font-size: 20px;
-    }
+   }
 }
 
 /*-------PORTFOLIO-------*/
