@@ -58,20 +58,18 @@ body {
     font-weight: 100;
 }
 /*-------ABOUT ME-------*/
-.aboutmebackground {
-    position: relative;
-    width: 100%;
-    height: 600px;
+.about {
     background: url(images/me.jpg) no-repeat center center;
     background-size: cover;
-    border: 1px solid transparent;
+    width: 100vw;
+    height: 100vh;
 }
 .row-aboutme {
     font-family:'Raleway';
     font-size: 65px;
     color: white;
     width: 100%;
-    margin-top: 60px;
+    padding-top: 60px;
     padding-right: 80px;
     text-align: right;
 }
@@ -106,30 +104,6 @@ body {
         font-size: 20px;
     }
 }
-/*@media(max-width: 654px) {
-    .row-aboutmedescrip {
-        font-size: 20px;
-        font-weight: 100;
-        margin-left: 35px;
-        margin-top: 200px;
-    }
-}
-    .row-aboutmedetail {
-        font-size: 20px;
-        border-left: 3px solid white;
-        margin: 390px 400px 100px 35px;
-        width: 300px;
-        padding: 3px;
-    }
-}
-@media(max-width: 325px) {
-    .row-aboutmedescrip {
-        font-size: 20px;
-        font-weight: 100;
-        margin-left: 35px;
-        margin-top: 50px;
-    }
-}*/
 
 /*-------PORTFOLIO-------*/
 .portfolio-container {
