@@ -11,6 +11,9 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
+    <!-- Fonts -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
@@ -58,7 +61,7 @@
           <li><a href="http://jodieryu.github.io/">Home</a></li>
           <li><a class="page-scroll" a href=".about">About</a></li>
           <li><a class="page-scroll" a href=".academics">Academics</a></li>
-          <li><a class="page-scroll" a href=.portfolio>Portfolio</a></li>
+          <li><a class="page-scroll" a href=".portfolio-remade">Portfolio</a></li>
         </ul>
       </div>
     </header>
@@ -96,29 +99,33 @@
       <div class="courses">
         <h2>Courses</h2>
           <ul>
+            <li>Human Computer Interaction (HCI) in Software Development</li>
+            <li>Programming Languages for Web Applications </li>
+            <li>New Media</li>
+            <li>Mobile Applications</li>
             <li>Program and Data Representation</li>
             <li>Software Development Methods</li>
             <li>Discrete Mathematics</li>
-            <li>New Media</li>
-            <li>Programming Languages for Web Applications (currently)</li>
-            <li>Algorithms (currently)</li>
+            <li>Algorithms </li>
+            <li>Computer Architecture</li>
           </ul>
       </div>
       <div class="skills">
         <h2>Skills</h2>
           <ul>
+            <li>HTML &amp; CSS</li>
+            <li>Javascript</li>
+            <li>angular.js</li>
             <li>Java</li>
             <li>C++</li>
             <li>Python</li>
-            <li>HTML &amp; CSS</li>
-            <li>Javascript</li>
-            <li>AngularJS</li>
             <li>Github</li>
           </ul>
       </div>
       <div class="leadership">
         <h2>Leadership</h2>
           <ul>
+            <li>Teacher's Assistant: Human Computer Interaction</li>
             <li>Treasurer (2016-2017), Public Relations Chair (2015-2016): The Vietnamese Student Association</li>
             <li>CIO Consultant (2015-2016): UVA Student Council</li>
             <li>Event Coordinator (2014-2015): First Year Leadership Experience</li>
@@ -179,7 +186,49 @@
   </div>
 
 <!--PORTFOLIO PAGE PORTFOLIO PAGE PORTFOLIO PAGE-->
-    <div class="portfolio">
+  <section id="portfolio">
+  <div class="portfolio-remade">
+    <div class="row-academics">
+      portfolio
+    </div>
+
+    <div class="col-sm-4 portfolio-item">
+      <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+        <div class="caption">
+          <div class="caption-content">
+            <i class="fa fa-search-plus fa-3x"></i>
+          </div>
+        </div>
+        <img src="images/flyers.jpg" class="img-responsive">
+      </a>
+    </div>
+
+    <div class="col-sm-4 portfolio-item">
+      <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+        <div class="caption">
+          <div class="caption-content">
+            <i class="fa fa-search-plus fa-3x"></i>
+          </div>
+        </div>
+        <img src="images/photography.jpg" class="img-responsive">
+      </a>
+    </div>
+
+    <div class="col-sm-4 portfolio-item">
+      <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+        <div class="caption">
+          <div class="caption-content">
+            <i class="fa fa-search-plus fa-3x"></i>
+          </div>
+        </div>
+        <img src="images/logos.jpg" class="img-responsive">
+      </a>
+    </div>
+
+  </div>
+  </section>
+
+    <!-- <div class="portfolio">
       <div class="row-academics">
         portfolio
       </div>
@@ -270,29 +319,7 @@
         </div>
 
       </div>
-    </div>
-
-<!--CONTACT & SOCIAL MEDIA -->
-<!-- <div class="footer-body">
-  <div class="footer-container">
-    
-    <div class="contact">contact &amp; follow me!
-    </div>
-    <ul class="social-buttons">
-      <li>
-        <a href="https://www.linkedin.com/in/jodie-ryu-15b960103" class="linkedin"></a>
-      </li>
-      <li>
-        <a href="https://github.com/jodieryu" class="github"></a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/ryuukki/" class="instagram"></a>
-      </li>
-    </ul>
-
-    </div>
-  </div>
-</div> -->
+    </div> -->
 
 <!--Return to top arrow-->
     <div id="content"></div>
@@ -312,6 +339,92 @@
         });
     });
     </script>
+
+<!-- Portfolio Modals -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                  <div class="rl">
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                      <div class="modal-body">
+                      <h2>flyers</h2>
+                      <hr class="star-primary">
+                      <img src="images/Jan_Feb_GenMeeting.jpg" class="img-responsive img-centered" alt="">
+                      <img src="images/5Kcolorrunflyer.jpg" class="img-responsive img-centered" alt="">
+                      <img src="images/First_GenMeeting.jpg" class="img-responsive img-centered" alt="">
+                      <img src="images/Oct_GenMeeting.jpg" class="img-responsive img-centered" alt="">
+                      <img src="images/PHOFESTFALL.jpg" class="img-responsive img-centered" alt="">
+                         
+                      <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Return</button>
+                           
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                  <div class="rl">
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                      <div class="modal-body">
+                      <h2>logos</h2>
+                      <hr class="star-primary">
+                      <img src="images/rubyramsss.jpg" class="img-responsive img-centered" alt="">
+                      <img src="images/pendulumlogo.png" class="img-responsive img-centered" alt="">
+                         
+                      <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Return</button>
+                           
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                    <h2>photography &amp; new media </h2>
+                    <hr class="star-primary">
+                    <img src="images/life.jpg" class="img-responsive img-centered" alt="">
+                    <img src="images/shadows.jpg" class="img-responsive img-centered" alt="">
+                    <img src="images/shapes.jpg" class="img-responsive img-centered" alt="">
+                    <center><img src="images/me.gif" class="img-responsive img-centered" alt=""></center>
+                    <hr class="star-primary">
+                    <h2>stop motion project</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/v4Z5E-UJ0Cs?rel=0" frameborder="0" allowfullscreen></iframe>
+                         
+                  </div>
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Return</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
 
   </body>
 </html>
