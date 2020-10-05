@@ -61,7 +61,7 @@ body {
 }
 /*-------ABOUT ME-------*/
 .about {
-    background: url(IMG_2102.JPG) no-repeat center center;
+    background: url(/images/wallsaremeantforclimbing.jpg) no-repeat center center;
     background-size: cover;
     width: 100vw;
     height: 100vh;
