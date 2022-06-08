@@ -1,369 +1,72 @@
-body {
-}
-/*-----NAVBAR-----*/
-.primary-nav {
-    text-transform: uppercase;
-    font-family:'Raleway', sans-serif;
-    font-weight: 100;
-    font-size:13px;
-    letter-spacing:1px;
-    text-align: center;
-    padding: 5px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: auto;
-    background: #fbfbfb;
-    margin: auto;
-    opacity: 0.8;
-    z-index: 820;
-    position: fixed;
-}
-.primary-nav li {
-    display: inline-block;
-}
-.primary-nav a {
-    padding: 0 8px;
-    color: black;
-    text-decoration: none;
-    font-size: 12px;
-}
-.primary-nav a:hover {
-    color: #FFE23D;
-    transition-duration: 0.4s;
-}
-/*-----HOMEPAGE EDITING-----*/
-.homepage {
-    color:white;
-    position: relative;
-    background: #000;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 10px;
-}
-.homepage-container {
-    text-align: center;
-    position: relative;
-    width: 100%;
-    top: 40%;
-    margin-top:1em;
-    height: 20vh;
-}
-.row-name {
-    font-family: 'Raleway';
-    font-size: 65px;
-}
-.row-description {
-    font-family: 'Raleway' sans-serif;
-    font-size: 25px;
-    letter-spacing: 10px;
-    font-weight: 100;
-}
-/*-------ABOUT ME-------*/
-.about {
-    background: url(/images/wallsaremeantforclimbing.jpg) no-repeat center center;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-}
-.row-aboutme {
-    font-family:'Raleway';
-    font-size: 65px;
-    color: white;
-    width: 100%;
-    padding-top: 40px;
-    padding-right: 80px;
-    text-align: right;
-}
-.row-description-container {
-    margin: 20% 0px 0px 3%;
-    background-color: #fff;
-    background-color: rgba(255,255,255,0.6);
-    text-align: center;
-    width: 40%;
-    float: left;
-}
-.row-aboutdescription {
-    border: 1px solid white;
-    font-family: 'Raleway' sans-serif;
-    font-size: 25px;
-    font-weight: 100;
-    letter-spacing: 3px;
-    color: black;
-    padding-top: 1%;
-    padding-bottom: 1%;
-}
-.row-aboutquote {
-    font-family: 'Raleway';
-    padding: 2%;
-    font-size: 16px;
-}
-
-@media (max-width: 500px) {
-   .row-description-container {
-        margin: 40% auto;
-        width: 100%;
-   }
-   .row-aboutdescription {
-        font-size: 20px;
-   }
-}
-
-/*-----Academics-----*/
-.academics {
-    width: 100vw;
-    height: 100vh;
-}
-.row-academics {
-    font-family:'Raleway';
-    font-size: 65px;
-    color: black;
-    width: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 80px;
-    text-align: left;
-}
-.courses {
-    background-color: #b4cee5
-}
-.courses, .skills, .leadership {
-    padding: 30px 0 30px 0;
-    margin: 0 1.5%;
-    float: left;
-    width: 30%;
-    text-align: center;
-    border-radius: 5px;
-}
-.courses ul, .skills ul, .leadership ul{
-    list-style-type: none;
-    padding: 0;
-    font-size: 16px;
-}
-.courses li, .skills li, .leadership li{
-    padding: 7px;
-}
-.skills {
-    background-color: #546986;
-}
-.leadership {
-    background-color: #b4cee5;
-}
-
-/*-------PORTFOLIO-------*/
-#portfolio .portfolio-item {
-    right: 0;
-    margin: 0 0 15px;
-    border-color: 2px solid red;
-}
-
-#portfolio .portfolio-item .portfolio-link {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 400px;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption {
-    position: absolute;
-    width: 100%;
+body, html {
     height: 100%;
-    opacity: 0;
-    background: #b4cee5;
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption:hover {
-    opacity: 0.9;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 20px;
-    margin-top: -12px;
-    text-align: center;
-    font-size: 20px;
-    color: #fff;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
-    margin-top: -12px;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
     margin: 0;
+    font-family: 'Lato', sans-serif;
 }
 
-#portfolio * {
-    z-index: 2;
+.lead {
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    ), url("images/me.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
-@media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
+.lead-text {
+  position: relative;
+  top: 15%;
+  left: 60%;
+  word-wrap: break-word;
+  width: 350px;
+}
+
+.lead-header {
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-family: 'Playfair Display', serif;
+}
+
+.sub-header {
+  font-size: 24px;
+  margin: 6px 0;
+  font-weight: 300;
+  color: #FFFFFF;
+  font-family: 'Lato', serif;
+}
+
+.paragraph-text {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.social-media {
+  margin: 20px 0;
+}
+
+.paragraph-text a img {
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.icons-credit {
+  font-size: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 775px) {
+    .top-text  {
+        left: 0%;
+        margin: auto;
     }
 }
-
-.portfolio-modal .modal-content {
-    padding: 100px 0;
-    min-height: 100%;
-    border: 0;
-    border-radius: 0;
-    text-align: center;
-    background-clip: border-box;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.portfolio-modal .modal-content h2 {
-    margin: 0;
-    font-size: 3em;
-    font-family: 'Raleway';
-}
-
-.portfolio-modal .modal-content img {
-    margin-bottom: 30px;
-}
-
-.portfolio-modal .modal-content .item-details {
-    margin: 30px 0;
-}
-
-.portfolio-modal .close-modal {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.portfolio-modal .close-modal:hover {
-    opacity: .3;
-}
-
-.portfolio-modal .close-modal .lr {
-    z-index: 1051;
-    width: 1px;
-    height: 75px;
-    margin-left: 35px;
-    background-color: #2c3e50;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.portfolio-modal .close-modal .lr .rl {
-    z-index: 1052;
-    width: 1px;
-    height: 75px;
-    background-color: #2c3e50;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-/*-----INTERNSHIP & LEADERSHIP-----*/
-.il-container {
-    width: 100vw;
-    margin-top: 70px;
-}
-.internshipsleadership {
-    font-family:'Raleway';
-    font-size: 65px;
-    color: #465c74;
-    padding-top: 55px;
-    margin: 0px auto;
-    width: 90%;
-}
-.img-box {
-    width: 800px;
-    height: 320px;
-    position:relative;
-    background-size: cover;
-    background-position: center center;
-    float: left;
-}
-
-.img-box::before {
-    content:"";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,.7);
-    opacity: 0;
-    transition: all .3s;
-}
-.img-box:hover::before {
-    opacity: 1;
-}
-
-.hover-overlay {
-    opacity: 0;
-    color: white;
-    font-family: 'Raleway' sans-serif;
-    font-weight: 100;
-    transition: all .3s;
-    position: absolute;
-    top: 50%;
-    left: 45%;
-    transform: translate(-50%, -70%);
-}
-.img-box:hover .hover-overlay {
-  opacity: 1;
-  transform: translate(-50%,-50%);
-}
-h4 {
-    font-family: 'Raleway';
-}
-/*.caption {
-    position:absolute;
-    top:0;
-    right:0;
-    background:rgba(66, 139, 202, 0.75);
-    width:100%;
-    height:100%;
-    padding:2%;
-    display: none;
-    text-align:center;
-    color:#fff !important;
-    z-index:2;
-}*/
-.iX-image {
-    width: 100%;
-    height: 100%;
-}
-.CA-image {
-    width: 100%;
-    height: 400px;
-}
-.VSA-image {
-    width: 100%;
-    height: 100%;
-}
-.FYLE-image {
-    width: 100%;
-    height: 100%;
-}
-
-/*-----Return to Top Arrow------*/
-#back-to-top {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    z-index: 9999;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    color: black;
-
-
