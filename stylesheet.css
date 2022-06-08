@@ -19,7 +19,7 @@ body, html {
 
 .lead-text {
   position: relative;
-  top: 15%;
+  top: 10%;
   left: 60%;
   word-wrap: break-word;
   width: 350px;
@@ -64,8 +64,8 @@ body, html {
   color: #FFFFFF;
 }
 
-@media only screen and (max-width: 775px) {
-    .top-text  {
+@media only screen and (max-width: 768px) {
+    .lead-text  {
         left: 0%;
         margin: auto;
     }
