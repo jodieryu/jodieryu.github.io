@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jodie Ryu | About Me</title>
+      <link rel="icon" type="image/j-icon" href="/images/favicon.ico">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <!-- Scroll JS -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet", href="stylesheet.css">
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top container-fluid" id="navbar">
+     <div class="navbar-header">
+      <a class="navbar-brand" href="/"><img src="images/jlogo.png" width="51" height="51" alt="logo"></a>
+      <button class="navbar-toggle navbar-default" type="button" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      </div>
+      <div class="collapse navbar-right navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="/">HOME</a></li>
+          <li><a href="/about.html">ABOUT</a></li>
+          <li><a href="/#portfolio">PORTFOLIO</a></li>
+          <li><a href="/#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.background = "#FFF";
+      } else {
+        document.getElementById("navbar").style.background = "none";
+        }
+      }
+    </script>
+
+    <div class="container page-lead">
+      <div class="row">
+        <img class="img-responsive center-block" src="images/IMG_1641.jpg" alt="Photo of me" style="width: 80%">
+      </div>
+    </div>
+    <div class="container page-contentAbout">
+      <div class="row">
+        <p>Hey there! I'm Jodie - a senior product manager, developer, and design enthusiast hoping to further my career, knowledge, and growth in different product spaces.</p>
+        <p>I was born & raised in Vienna, Virginia. Growing up, I loved drawing comics for my friends and playing online puzzle games. Those joys eventually followed me to college, where I took art classes for fun and found a passion for problem solving through my computer science courses. Imagine my surprise when I discovered Product Management, where I could be creative & analytical!</p>
+        <p>I strive to help build products that make people's lives better, whether that be in their day-to-day jobs or if they're just passing by as a consumer. I love seeking solutions to complex problems and thrive in the midst of chaos. Among all, teamwork is very important to me, making a successful product can't be done without the collaboration, hard work, and perspective of multiple teams to come up with creative solutions.</p>
+      </div>
+    </div>
+
+    <div class="container page-contentAbout">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-8">
+          <h2>Experience</h2>
+            <p>Brightspot</p>
+              <p class="experience-description">Senior Product Manager |<i> July 2018 - Present</i></p>
+            <p>IST Research</p>
+              <p class="experience-description">Engineering Intern |<i> May 2017 - Aug 2017</i></p>
+            <p>Pendulum Advisors</p>
+              <p class="experience-description">Lead Web Developer |<i> July 2016 - Aug 2016</i></p>
+          <h2>Education</h2>
+          <p>University of Virginia</p>
+            <p class="experience-description">Bachelor of Arts in Computer Science, Psychology Minor | May 2018</p>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-8">
+          <h2>Skills</h2>
+          <p>Product Management</p>
+            <ul class="experience-description">
+              <li>Agile Methodology & Development</li>
+              <li>Jira & Confluence</la>
+              <li>Google Suite (Sheets, Docs, Slides)</li>
+              <li>Microsoft Office Suite (Excel, Word, Powerpoint)</li>
+              <li>Content Management Systems (CMS)</li>
+              <li>Google Analytics, Google Tag Manager</li>
+            </ul>
+          <p>Design & Development</p>
+            <ul class="experience-description">
+              <li>Adobe Creative Suite</li>
+              <li>Figma</li>
+              <li>Sketch</li>
+              <li>Invision</li>
+              <li>Git</li>
+              <li>HTML/CSS, AngularJS</li>
+              <li>Java, C++, Python</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container page-contentAbout">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-8">
+            <img class="img-responsive center-block" src="images/IMG_9666.jpg" alt="Jodie rock climbing">
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-8">
+          <h2>Curiousities</h2>
+          <ul>
+              <li>I'm an avid rock climber & outdoor adventurer</li>
+              <li>My daily joys are completing the NYTimes Wordle and Daily Crossword</la>
+              <li>My favorite city in the world are two: San Francisco and Venice</li>
+              <li>I'm on the hunt for the perfect chocolate chip cookie recipe (10 recipes down... so far, Bon App&eacutetit's recipe has been the best)</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <script> ScrollReveal().reveal('.page-contentAbout', { delay: 300 }); </script>
+
+    <div class="container footer" id="contact">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 footer-text">
+          <h1>Contact Me</h1>
+          <p>Please feel free to reach out.</p>
+          <p>I am open to chatting about work or sharing more details about my portfolio. Lets get in touch!</p>
+          <div class="social-media">
+            <a href="mailto:jodie.ryu@gmail.com?Subject=Reaching%20Out" target="_top"><img src="images/icons8-mail-24.png" alt="mail"></a>
+            <a href="https://www.linkedin.com/in/jodieryu-15b960103/"><img src="images/icons8-linkedin-24.png" alt="linkedin"></a>
+            <a href="https://github.com/jodieryu"><img src="images/icons8-github-24.png" alt="github"></a>
+          </div>
+          <div class="footer-credit">
+            <p>Copyright &#169; Jodie Ryu.</p>
+            <p>Icons courtesy of Icons8. Stock images courtesy of Unsplash.</p>
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>
