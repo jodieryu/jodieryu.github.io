@@ -19,3 +19,4 @@ if ($('#back-to-top').length) {
         }, 700);
     });
 }
+

@@ -1,33 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- 
+
+Hey there! I see you're trying to see how I built my website, hmm? Well, I'll give you the run down of my processes & what I used!
+
+1) I started the design & layout on Sketch. I usually like to have a high-fidelity vision in place before I start coding!  Then, I start making div classes and have some fun customizing in CSS.
+2) All layouts are based off of Bootstrap. I like the framework for helping me get my site mobile responsive.
+3) Other libraries used: Jquery and ScrollReveal (for navigation animation and scroll reveal for content).
+-->
   <head>
     <title>Jodie Ryu | Home</title>
-      <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Lato:100,700" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Lato:500,900" rel="stylesheet">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <!-- Scroll JS -->
+      <script src="https://unpkg.com/scrollreveal"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet", href="stylesheet.css">
   </head>
 
   <body>
-    <section class="lead">
-      <div class="lead-text lead-header">Jodie Ryu</div>
-      <div class="lead-text sub-header">Design Enthusiast, Developer, Manager of Chaos</div>
-      
-      <div></div>
-      <div class="lead-text paragraph-text">
-        <div class="social-media">
-          <a href="mailto:jodie.ryu@gmail.com?Subject=Reaching%20Out" target="_top"><img src="images/mail-96.png" alt="mail"></a>
-          <a href="https://www.linkedin.com/in/jodieryu-15b960103/"><img src="images/linkedin-96.png" alt="linkedin"></a>
-          <a href="https://github.com/jodieryu"><img src="images/octocat-96.png" alt="github"></a>
+    <div class="navbar navbar-fixed-top container-fluid" id="navbar">
+     <div class="navbar-header">
+      <a class="navbar-brand" href="/"><img src="images/jlogo.png" width="51" height="51" alt="logo"></a>
+      <button class="navbar-toggle navbar-default" type="button" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      </div>
+      <div class="collapse navbar-right navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="/">HOME</a></li>
+          <!--<li><a href="#">ABOUT</a></li> -->
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.background = "#FFF";
+      } else {
+        document.getElementById("navbar").style.background = "none";
+        }
+      }
+    </script>
+    
+      <div class="container lead">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 lead-text">
+          <h1>Hi, I'm Jodie</h1>
+          <p>Product Manager and developer, passionate about building products that make people's lives better.</p>
+
+          <div class="social-media">
+            <a href="mailto:jodie.ryu@gmail.com?Subject=Reaching%20Out" target="_top"><img src="images/icons8-mail-24.png" alt="mail"></a>
+            <a href="https://www.linkedin.com/in/jodieryu-15b960103/"><img src="images/icons8-linkedin-24.png" alt="linkedin"></a>
+            <a href="https://github.com/jodieryu"><img src="images/icons8-github-24.png" alt="github"></a>
+          </div>
+
+          <div class="lead-button">
+            <a href="#portfolio"><button class="button">Explore my work</button></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 lead-media">
+           <img class="img-responsive center-block" src="images/mememe.jpg" alt="Photo of me"></a>
         </div>
       </div>
-      
-      <div class="icons-credit">Icons made by <a href="https://icons8.com/" title="ICONS8">ICONS8</a> from <a href="https://icons8.com/" title="ICONS8">www.icons8.com</a>
+
+      <div class="container portfolio portfolio-row-1" id="portfolio">
+        <h2>Featured Work</h2>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-8 portfolio-content">
+          <img class="img-responsive center-block" src="images/PGA Screenshot.png" alt="PGA Website">
+          <h3>The PGA Championship and Ryder Cup</h3>
+          <p>The PGA Championship is one of the four men's major championships in professional golf and the Ryder Cup is a biennial men's golf competition between teams from Europe and the United States. I led the migration and build out for the both the CMS and frontend experience of 6+ sites.</p>
+          <div class="lead-button">
+            <a href="/pgaryder.html"><button class="button">Learn More</button></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-8 portfolio-content">
+          <img class="img-responsive center-block" src="images/DCP Logo.png" alt="DCP Logo">
+          <h3>Drive, Chip, and Putt</h3>
+          <p>Drive, Chip, and Putt is a free nationwide junior golf development competition aimed at growing the game by focusing on the three fundamental skills employed in golf. I coordinated the redesign of the site and the implementation of new event management features working alongside three joint stakeholders and an internal development team.</p>
+          <div class="lead-button">
+            <a href="/dcp.html"><button class="button">Learn More</button></a>
+          </div>
+        </div>
+      </div>
+      <script> ScrollReveal().reveal('.portfolio-row-1', { delay: 300 }); </script>
+      <div class="container portfolio portfolio-row-2">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-8 portfolio-content">
+          <img class="img-responsive center-block" src="images/LATimes Image.png" alt="LATimes Logo">
+          <h3>The California Times</h3>
+          <p>The Los Angeles Times newspaper is a leading source of breaking news, entertainment, sports, politics, and more for Southern California and the world. I was one of the leading product managers that worked on transitioning LATimes and their 20+ additional sister sites from their legacy CMS platform to the Brightspot CMS.</p>
+          <div class="lead-button">
+            <a href="https://www.brightspot.com/customers/news/l-a-times-launches-industry-leading-new-platform-developed-on-brightspot"><button class="button">Learn More</button></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-8 portfolio-content">
+          <img class="img-responsive center-block" src="images/Pendulum Advisors Logo.png" alt="Pendulum Advisors Logo">
+          <h3>Pendulum Advisors</h3>
+          <p>Pendulum Advisors is an investment management firm that provides detailed investment analysis and due diligence for individual client's needs. I collaborated with a four person business team to envision the company's website design and aesthetic, then developed and successfully launched Pendulum Advisors first ever website.</p>
+          <div class="lead-button">
+            <a href="http://pendulumadvisors.com/"><button class="button">Learn More</button></a>
+          </div>
+        </div>
+      </div>
+      <script> ScrollReveal().reveal('.portfolio-row-2', { delay: 300 }); </script>
+
+      <div class="container footer" id="contact">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 footer-text">
+          <h1>Contact Me</h1>
+          <p>Please feel free to reach out.</p>
+          <p>I am open to chatting about work or sharing more details about my portfolio. Lets get in touch!</p>
+          <div class="social-media">
+            <a href="mailto:jodie.ryu@gmail.com?Subject=Reaching%20Out" target="_top"><img src="images/icons8-mail-24.png" alt="mail"></a>
+            <a href="https://www.linkedin.com/in/jodieryu-15b960103/"><img src="images/icons8-linkedin-24.png" alt="linkedin"></a>
+            <a href="https://github.com/jodieryu"><img src="images/icons8-github-24.png" alt="github"></a>
+          </div>
+          <div class="footer-credit">
+            <p>Copyright &#169; Jodie Ryu.</p>
+            <p>Icons courtesy of Icons8. Stock images courtesy of Unsplash.</p>
+          </div>
+        </div>
       </div>
     
-    </section>
+
   </body>
+
 </html>
